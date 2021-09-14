@@ -1,0 +1,12 @@
+
+
+<button (click)="startRecording()">הקלט</button>
+
+<button (click)="stopRecording()">עצור</button>
+
+<!-- <audio src={{src}}></audio> -->
+    <audio
+        controls
+        [src]="src | safeResourceUrl">
+
+    </audio>
